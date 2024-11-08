@@ -1,0 +1,156 @@
+//
+// Buttons
+//
+
+// Import Dependencies
+@import "buttons/base";
+@import "buttons/theme";
+
+// Custom Button
+.btn-warning-custom {
+  height: 50px;
+  border-radius: 16px;
+  padding: 16px 32px;
+  gap: 8px;
+  background-color: $custom-warning; // Ganti dengan warna kustom Anda
+  border-color: $custom-warning; // Ganti dengan warna kustom Anda
+  box-shadow: 2px 4px 8px 0px rgba(255, 204, 65, 0.2); // Ganti dengan warna kustom Anda
+
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 2.2;
+
+  &:hover {
+    background-color:  #162D43;
+    border-color:  #162D43;
+    color:$custom-warning;
+;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($custom-warning, 0.5);
+  }
+}
+
+.btn-black-custom {
+  height: 50px;
+  border-radius: 16px;
+  padding: 16px 32px;
+  gap: 8px;
+  background-color: #162D43 ; // Ganti dengan warna kustom Anda
+  border-color:#162D43; // Ganti dengan warna kustom Anda
+  box-shadow: 2px 4px 8px 0px rgba(255, 204, 65, 0.2); // Ganti dengan warna kustom Anda
+
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 2.2;
+   color:$custom-warning;
+
+  &:hover {
+    background-color: $custom-warning;;
+    border-color:$custom-warning;
+    color:#162D43;
+;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($custom-warning, 0.5);
+  }
+}
+
+.btn-grey-custom {
+  height: 50px;
+  border-radius: 16px;
+  padding: 16px 32px;
+  gap: 8px;
+  background-color: #E8E8E8 ; // Ganti dengan warna kustom Anda
+  border-color:#162D43; // Ganti dengan warna kustom Anda
+  box-shadow: 2px 4px 8px 0px rgba(255, 204, 65, 0.2); // Ganti dengan warna kustom Anda
+
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 2.2;
+  color:#162D43;
+
+  &:hover {
+    background-color: $custom-warning;;
+    border-color:$custom-warning;
+    color:#162D43;
+;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($custom-warning, 0.5);
+  }
+}
+
+.btn-warning-custom-secondary {
+  border-radius: 16px;
+  padding: 8px 48px;
+  gap: 8px;
+  background-color: $custom-warning; // Ganti dengan warna kustom Anda
+  border: solid 1px $custom-warning; // Ganti dengan warna kustom Anda
+  box-shadow: 2px 4px 8px 0px rgba(255, 204, 65, 0.2); // Ganti dengan warna kustom Anda
+
+  font-family: Poppins;
+  font-weight: 700;
+
+  &:hover {
+    background-color:  #162D43;
+    border-color:  #162D43;
+    color:$custom-warning;
+;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($custom-warning, 0.5);
+  }
+}
+
+.btn-warning-custom-secondary-outline {
+  border-radius: 16px;
+  padding: 8px 48px;
+  gap: 8px;// Ganti dengan warna kustom Anda
+  border-color: $custom-warning; // Ganti dengan warna kustom Anda
+  box-shadow: 2px 4px 8px 0px rgba(255, 204, 65, 0.2); // Ganti dengan warna kustom Anda
+
+  font-family: Poppins;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $custom-warning;
+    border-color:  #162D43;
+    color:#162D43;
+;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($custom-warning, 0.5);
+  }
+}
+
+
+
+.btn-outline-warning-custom {
+  height: 50px;
+  border-radius: 16px;
+  padding: 16px 32px;
+  gap: 8px;
+  border-color: #162D43; // Ganti dengan warna kustom Anda
+  box-shadow: 2px 4px 8px 0px rgba(255, 204, 65, 0.2); // Ganti dengan warna kustom Anda
+
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 2.2;
+
+  &:hover {
+    background-color:  $custom-warning;
+    border-color:  #162D43;
+    color:#162D43;
+;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($custom-warning, 0.5);
+  }
+}

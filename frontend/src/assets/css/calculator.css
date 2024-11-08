@@ -1,0 +1,338 @@
+   .modal-custom-body {
+       overflow: hidden;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       user-select: none;
+   }
+  .container1 {
+    width: 100%;
+     background: #ecf0f3;
+      padding: 10px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+  }
+
+  .content1 {
+      width: 100%;
+      margin-top: 1.7em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .row1 button {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      margin: 5px;
+      border-radius: 4px;
+      transition: .1s;
+      box-shadow: 5px 5px 8px #00000020,
+          -5px -5px 8px #ffff;
+  }
+
+   @media only screen and (max-width: 299px) {
+       .row1 button {
+           width: 33px;
+           height: 18x;
+            font-size: 8px;
+       }
+   }
+  @media only screen and (min-width: 300px) and (max-width: 305px) {
+      .row1 button {
+          width: 34px;
+          height: 19px;
+            font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 306px) and (max-width: 311px) {
+      .row1 button {
+          width: 35px;
+          height: 20px;
+            font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 312px) and (max-width: 317px) {
+      .row1 button {
+          width: 36px;
+          height: 21px;
+            font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 318px) and (max-width: 323px) {
+      .row1 button {
+          width: 37px;
+          height: 22px;
+        font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 324px) and (max-width: 329px) {
+      .row1 button {
+          width: 38px;
+          height: 23px;
+         font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 330px) and (max-width: 335px) {
+      .row1 button {
+          width: 39px;
+          height: 24px;
+         font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 336px) and (max-width: 341px) {
+      .row1 button {
+          width: 40px;
+          height: 25px;
+        font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 342px) and (max-width: 347px) {
+      .row1 button {
+          width: 41px;
+          height: 26px;
+        font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 348px) and (max-width: 353px) {
+      .row1 button {
+          width: 42px;
+          height: 27px;
+        font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 354px) and (max-width: 359px) {
+      .row1 button {
+          width: 43px;
+          height: 28px;
+        font-size: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 363px) {
+      .row1 button {
+          width: 44px;
+          height: 29px;
+        font-size: 10px;
+      }
+  }
+
+
+@media only screen and (min-width: 364px) and (max-width: 369px) {
+    .row1 button {
+        width: 45px;
+        height: 30px;
+    }
+}
+
+ @media only screen and (min-width: 370px) and (max-width: 375px) {
+     .row1 button {
+         width: 46px;
+         height: 30px;
+     }
+ }
+
+ @media only screen and (min-width: 376px) and (max-width: 381px) {
+     .row1 button {
+         width: 47px;
+         height: 30px;
+     }
+ }
+
+@media only screen and (min-width: 382px) and (max-width: 387px) {
+    .row1 button {
+        width: 48px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 388px) and (max-width: 393px) {
+    .row1 button {
+        width: 49px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 394px) and (max-width: 399px) {
+    .row1 button {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 405px) {
+    .row1 button {
+        width: 51px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 406px) and (max-width: 435px) {
+    .row1 button {
+        width: 52px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 436px) and (max-width: 465px) {
+    .row1 button {
+        width: 57px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 466px) and (max-width: 495px) {
+    .row1 button {
+        width: 62px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 496px) and (max-width: 507px) {
+    .row1 button {
+        width: 67px;
+        height: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 508px) and (max-width: 525px) {
+    .row1 button {
+        width: 69px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 526px) and (max-width: 543px) {
+    .row1 button {
+        width: 72px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 544px) and (max-width: 555px) {
+    .row1 button {
+        width: 76px;
+        height: 30px;
+    }
+}
+  
+@media only screen and (min-width: 556px) and (max-width: 567px) {
+    .row1 button {
+        width: 77px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 568px) and  (max-width: 573px) {
+      .row1 button {
+          width: 79px;
+          height: 30px;
+      }
+  }
+
+  @media only screen and (min-width: 574px) and  (max-width: 575px) {
+      .row1 button {
+          width: 80px;
+          height: 30px;
+      }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 576px) {
+    .row1 button {
+            width: 69px;
+            height: 30px;
+        }
+  }
+
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .row1 button {
+            width: 69px;
+            height: 30px;
+        }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .row1 button {
+            width: 69px;
+            height: 30px;
+        }
+  }
+
+  @media only screen and (min-width: 993px) and (max-width: 1799px) {
+      .row1 button {
+          width: 69px;
+          height: 30px;
+      }
+  }
+
+  /* Media query untuk layar ekstra besar (xl) */
+  @media only screen and (min-width: 1800px) {
+    .row1 button {
+            width: 69px;
+            height: 30px;
+        }
+  }
+
+  .row1 button:hover {
+      box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+          inset -5px -5px 8px #fff;
+      background: #fff;
+  }
+
+  .display1 #screen {
+      margin-bottom: .5em;
+      width: 100%;
+      height: 70px;
+      font-size: 35px;
+      outline: none;
+      border: none;
+      text-align: right;
+      padding-right: .5em;
+      background: #ecf0f3;
+      border-radius: 6px;
+      box-shadow: inset 8px 8px 8px #cbced1,
+          inset -8px -8px 8px #ffffff;
+  }
+
+  #eval {
+      background: #33ccff;
+      color: #fff;
+      box-shadow: inset 5px 5px 8px #66d9ff,
+          inset -5px -5px 8px #00ace6;
+  }
+
+  #eval:hover {
+      box-shadow: inset 5px 5px 8px #00ace6,
+          inset -5px -5px 8px #00ace6;
+  }
+
+  #ac {
+      background: #33cc33;
+      color: #fff;
+  }
+
+  #ac:hover {
+      box-shadow: inset 5px 5px 8px #2eb82e,
+          inset -5px -5px 8px #33cc33;
+  }
+
+  #ce {
+      background: #ff3399;
+      color: #fff;
+  }
+
+  #ce:hover {
+      box-shadow: inset 5px 5px 8px #e60073,
+          inset -5px -5px 8px #ff3399;
+  }

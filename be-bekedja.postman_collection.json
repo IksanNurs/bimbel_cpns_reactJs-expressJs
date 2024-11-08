@@ -1,0 +1,1556 @@
+{
+	"info": {
+		"_postman_id": "edc7a485-834f-498a-bf17-5132d72b977d",
+		"name": "be-bekedja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36790963"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ui\",\r\n    \"email\":\"ui@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"ui\",\r\n    \"email\":\"ui@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "264"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"108-BafSBLoGT4MC+6TytD+IrihSh7U\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 04:06:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User successfully created\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1aUBnbWFpbC5jb20iLCJyb2xlIjoidmlld2VyIiwibmFtZSI6InVpIiwiaWF0IjoxNzMwOTUyMzgxLCJleHAiOjE3MzA5NTU5ODF9.6qOTRTMyuB8QJfInagJTRWIWhfwk_VHkyO4so3PQd2c\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"ui@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/auth/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"ui@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "261"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"105-ypCD4dH6pmDfpPtGSbLboX0vzrU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 04:08:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Successfully logged in\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1aUBnbWFpbC5jb20iLCJyb2xlIjoidmlld2VyIiwibmFtYSI6InVpIiwiaWF0IjoxNzMwOTUyNTAyLCJleHAiOjE3MzA5NTYxMDJ9.hzkxuvW_IJIk0M99SzXsodNMu96EHdSNX34XjDYJHEg\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users/$id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"budi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/users/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"budi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/users/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "228"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e4-JHBah1ZK3lsh/UKRNlzH6r/sETQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 04:30:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"budi\",\n        \"email\": \"ui@gmail.com\",\n        \"password\": \"$2b$10$wn7mgThDtNDlsJPt1Gbn9eVkwwfarwJLQA2eBHclIw3SqyVGw0zOy\",\n        \"role\": \"viewer\",\n        \"createdAt\": 1730952381,\n        \"updatedAt\": 1730952381\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9f-U8RBqVuEqK+p1EwLlPP2qeCEW0s\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 04:29:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Users retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"ui\",\n            \"email\": \"ui@gmail.com\",\n            \"role\": \"viewer\",\n            \"created_at\": 1730952381,\n            \"updated_at\": 1730952381\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "users/$id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/users/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/users/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "156"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9c-d2aWaPH4q5l+fEyyEUl6cmB9jEY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 04:29:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User retrieved successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"ui\",\n        \"email\": \"ui@gmail.com\",\n        \"role\": \"viewer\",\n        \"created_at\": 1730952381,\n        \"updated_at\": 1730952381\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"test 4\",\r\n    \"type\":1,\r\n    \"price\":1000,\r\n    \"description\":\"new\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/products",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"test 1\",\r\n    \"type\":1,\r\n    \"price\":1000,\r\n    \"description\":\"new\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cb-ktBrQqXVsA6XgpDsaEBw2ceUMdA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 05:20:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product created successfully\",\n    \"data\": {\n        \"isActive\": 1,\n        \"createdAt\": 1730956820,\n        \"updatedAt\": 1730956820,\n        \"id\": 1,\n        \"name\": \"test 1\",\n        \"description\": \"new\",\n        \"price\": 1000,\n        \"type\": 1,\n        \"createdBy\": 1,\n        \"updatedBy\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"test 7\",\r\n    \"type\":1,\r\n    \"price\":1000,\r\n    \"description\":\"new\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/products/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"test 7\",\r\n    \"type\":1,\r\n    \"price\":1000,\r\n    \"description\":\"new\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/products/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "233"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e9-laHhpBLw3a+9JPUu7R7U36iwfTM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 05:29:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"test 7\",\n        \"description\": \"new\",\n        \"price\": 1000,\n        \"type\": 1,\n        \"isActive\": 1,\n        \"createdBy\": 1,\n        \"updatedBy\": 1,\n        \"createdAt\": 1730956820,\n        \"updatedAt\": 1730956820,\n        \"created_by\": 1,\n        \"updated_by\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "products/$id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/products/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/products/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "257"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"101-DEoXIRyosIe1H5nSboNKqvJpPLw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 05:26:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product retrieved successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"test 1\",\n        \"description\": \"new\",\n        \"price\": 1000,\n        \"type\": 1,\n        \"isActive\": 1,\n        \"created_at\": 1730956820,\n        \"updated_at\": 1730956820,\n        \"createdByUser\": {\n            \"id\": 1,\n            \"name\": \"budi\"\n        },\n        \"updatedByUser\": {\n            \"id\": 1,\n            \"name\": \"budi\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/products",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "466"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d2-PFfbjVnwa8MW1QtgZDiXKSa89lo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 05:27:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Products retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"test 1\",\n            \"description\": \"new\",\n            \"price\": 1000,\n            \"type\": 1,\n            \"isActive\": 1,\n            \"created_at\": 1730956820,\n            \"updated_at\": 1730956820,\n            \"createdByUser\": {\n                \"id\": 1,\n                \"name\": \"budi\"\n            },\n            \"updatedByUser\": {\n                \"id\": 1,\n                \"name\": \"budi\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"test 4\",\n            \"description\": \"new\",\n            \"price\": 1000,\n            \"type\": 1,\n            \"isActive\": 1,\n            \"created_at\": 1730957029,\n            \"updated_at\": 1730957029,\n            \"createdByUser\": {\n                \"id\": 1,\n                \"name\": \"budi\"\n            },\n            \"updatedByUser\": {\n                \"id\": 1,\n                \"name\": \"budi\"\n            }\n        }\n    ]\n}"
+						},
+						{
+							"name": "succes_unpurchase",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/products?status=unpurchased",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "unpurchased"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "237"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ed-Zdgy2PXRtE/fObDFtah9nfSKpXk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 10:13:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Products retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"test 4\",\n            \"description\": \"new\",\n            \"price\": 1000,\n            \"type\": 1,\n            \"is_active\": 1,\n            \"created_at\": 1730969755,\n            \"updated_at\": 1730969755,\n            \"orders\": [],\n            \"createdByUser\": null,\n            \"updatedByUser\": null\n        }\n    ]\n}"
+						},
+						{
+							"name": "success_purchase",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/products?status=purchased",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "purchased"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-3eBa6QtCBQBAefX+NIigu3kfZis\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 11:06:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Products retrieved successfully\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "midtrans",
+			"item": [
+				{
+					"name": "midtrans/notifications",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"va_numbers\":[{\"va_number\":\"124128488044492119\",\"bank\":\"bri\"}],\"transaction_time\":\"2024-02-03 19:35:05\",\"transaction_status\":\"pending\",\"transaction_id\":\"2e8c384d-48aa-4208-9d34-b88af3df2ada\",\"status_message\":\"midtrans payment notification\",\"status_code\":\"201\",\"signature_key\":\"498a09f85e348c7ca6760c3d8a9bc7b10c95495bbf03667349bdfe02225abaf5bbfcfa7c2a177e140fed1f8524654985fe17dcab3ae3cf97d0bd61f175d18bdc\",\"payment_type\":\"bank_transfer\",\"payment_amounts\":[],\"order_id\":\"testing-22d91ae0-c715-49cc-8f49-074c211f3ea0\",\"merchant_id\":\"G870257156\",\"gross_amount\":\"1000.00\",\"fraud_status\":\"accept\",\"expiry_time\":\"2024-02-04 19:35:05\",\"currency\":\"IDR\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/midtrans/notification",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"midtrans",
+								"notification"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"va_numbers\":[{\"va_number\":\"124128488044492119\",\"bank\":\"bri\"}],\"transaction_time\":\"2024-02-03 19:35:05\",\"transaction_status\":\"capture\",\"transaction_id\":\"2e8c384d-48aa-4208-9d34-b88af3df2ada\",\"status_message\":\"midtrans payment notification\",\"status_code\":\"201\",\"signature_key\":\"903039555c9337fce4007b41bb7d04cead0f2d2689cd2c1c4d0fed7c47a2c973bbf0ac3814b3b5e5e178ed73151e5a024745889db9d3d271316abfea3d8dfbdf\",\"payment_type\":\"bank_transfer\",\"payment_amounts\":[],\"order_id\":\"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\"merchant_id\":\"G870257156\",\"gross_amount\":\"1000.00\",\"fraud_status\":\"accept\",\"expiry_time\":\"2024-02-04 19:35:05\",\"currency\":\"IDR\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/api/midtrans/notification",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"midtrans",
+										"notification"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "547"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"223-kJhClicbNceCvZij9yqQCp64HxE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 09:13:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Notification processed successfully\",\n    \"data\": {\n        \"created_at\": 1730970785,\n        \"updated_at\": 1730970785,\n        \"id\": 5,\n        \"order_id\": 1,\n        \"order_uuid\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n        \"gross_amount\": 1000,\n        \"signature_key\": \"903039555c9337fce4007b41bb7d04cead0f2d2689cd2c1c4d0fed7c47a2c973bbf0ac3814b3b5e5e178ed73151e5a024745889db9d3d271316abfea3d8dfbdf\",\n        \"transaction_id\": \"2e8c384d-48aa-4208-9d34-b88af3df2ada\",\n        \"transaction_time\": \"2024-02-03 19:35:05\",\n        \"transaction_status\": \"capture\",\n        \"fraud_status\": \"accept\",\n        \"payment_type\": \"bank_transfer\",\n        \"raw\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "midtrans/finish",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/midtrans/finish",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"midtrans",
+								"finish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "midtrans/unfinish",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/midtrans/unfinish",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"midtrans",
+								"unfinish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "midtrans/error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/midtrans/error",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"midtrans",
+								"error"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "midtrans/cancle/$id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/midtrans/cancel/$id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"midtrans",
+								"cancel",
+								"$id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "midtrans/status?id=$id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/midtrans/status?id=",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"midtrans",
+								"status"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/orders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_id\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/orders",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "571"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23b-/AdfdeXYOF4exSRjaXSx1vzcAKs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 09:06:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Order created successfully\",\n    \"data\": {\n        \"order\": {\n            \"is_active\": 1,\n            \"created_at\": 1730970416,\n            \"updated_at\": 1730970416,\n            \"id\": 1,\n            \"uuid\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n            \"user_id\": 1,\n            \"product_id\": 1,\n            \"amount\": 1000,\n            \"transaction_id\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n            \"created_by\": 1,\n            \"updated_by\": 1,\n            \"cancelled_at\": null,\n            \"expired_at\": null,\n            \"checked_out_at\": null,\n            \"midtrans_payment_token\": \"49815a9b-140b-4b98-9ce6-935489256988\",\n            \"midtrans_payment_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/49815a9b-140b-4b98-9ce6-935489256988\",\n            \"paid_at\": null\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/orders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/orders",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "725"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d5-myEfHhWboCeUa5TVvEaJUY5AK+k\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 09:27:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Orders retrieved successfully\",\n    \"data\": [\n        {\n            \"uuid\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n            \"user_id\": 1,\n            \"product_id\": 1,\n            \"transaction_id\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n            \"amount\": 1000,\n            \"is_active\": 1,\n            \"created_at\": 1730970416,\n            \"updated_at\": 1730970416,\n            \"cancelled_at\": null,\n            \"expired_at\": null,\n            \"checked_out_at\": 1730970785,\n            \"midtrans_payment_token\": \"49815a9b-140b-4b98-9ce6-935489256988\",\n            \"midtrans_payment_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/49815a9b-140b-4b98-9ce6-935489256988\",\n            \"paid_at\": 1730970785,\n            \"created_by\": 1,\n            \"updated_by\": 1,\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"ui\"\n            },\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"test 4\",\n                \"price\": 1000\n            },\n            \"created_by_user\": {\n                \"id\": 1,\n                \"name\": \"ui\"\n            },\n            \"updated_by_user\": {\n                \"id\": 1,\n                \"name\": \"ui\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "orders/$id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/orders/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/orders/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "722"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d2-ypT6zI/71aJcu4lCiZinCAqhu+Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 09:28:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Order retrieved successfully\",\n    \"data\": {\n        \"uuid\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n        \"user_id\": 1,\n        \"product_id\": 1,\n        \"transaction_id\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n        \"amount\": 1000,\n        \"is_active\": 1,\n        \"created_at\": 1730970416,\n        \"updated_at\": 1730970416,\n        \"cancelled_at\": null,\n        \"expired_at\": null,\n        \"checked_out_at\": 1730970785,\n        \"midtrans_payment_token\": \"49815a9b-140b-4b98-9ce6-935489256988\",\n        \"midtrans_payment_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/49815a9b-140b-4b98-9ce6-935489256988\",\n        \"paid_at\": 1730970785,\n        \"created_by\": 1,\n        \"updated_by\": 1,\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"ui\"\n        },\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"test 4\",\n            \"price\": 1000\n        },\n        \"created_by_user\": {\n            \"id\": 1,\n            \"name\": \"ui\"\n        },\n        \"updated_by_user\": {\n            \"id\": 1,\n            \"name\": \"ui\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "orders/$id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/orders/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "      { \"uuid\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\r\n        \"user_id\": 1,\r\n        \"product_id\": 1,\r\n        \"transaction_id\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\r\n        \"amount\": 1000,\r\n        \"is_active\": 1,\r\n        \"created_at\": 1730970416,\r\n        \"updated_at\": 1730970416,\r\n        \"cancelled_at\": null,\r\n        \"expired_at\": null,\r\n        \"checked_out_at\": 1730970785,\r\n        \"midtrans_payment_token\": \"49815a9b-140b-4b98-9ce6-935489256988\",\r\n        \"midtrans_payment_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/49815a9b-140b-4b98-9ce6-935489256988\",\r\n        \"paid_at\": 1730970785,\r\n        \"created_by\": 1,\r\n        \"updated_by\": 2\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/orders/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "573"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23d-OHhfdfqEft1vQL3jXDjgS/ZT8Yk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Nov 2024 09:31:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Order updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"uuid\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n        \"user_id\": 1,\n        \"product_id\": 1,\n        \"transaction_id\": \"testing-701983d4-e75e-4109-8c0b-10c3948ab10f\",\n        \"amount\": 1000,\n        \"cancelled_at\": null,\n        \"is_active\": 1,\n        \"expired_at\": null,\n        \"checked_out_at\": 1730970785,\n        \"midtrans_payment_token\": \"49815a9b-140b-4b98-9ce6-935489256988\",\n        \"midtrans_payment_url\": \"https://app.sandbox.midtrans.com/snap/v4/redirection/49815a9b-140b-4b98-9ce6-935489256988\",\n        \"paid_at\": 1730970785,\n        \"created_at\": 1730970416,\n        \"updated_at\": 1730970416,\n        \"created_by\": 1,\n        \"updated_by\": 1\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:8081",
+			"type": "string"
+		},
+		{
+			"key": "TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1aUBnbWFpbC5jb20iLCJyb2xlIjoidmlld2VyIiwibmFtYSI6InVpIiwiaWF0IjoxNzMwOTc3MjkzfQ.M1lPhk3sKIBH0bpH8Wsaub0OfGpGxdG8TgUPFz7JKbU",
+			"type": "string"
+		}
+	]
+}
